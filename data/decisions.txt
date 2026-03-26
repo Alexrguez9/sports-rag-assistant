@@ -1,0 +1,9 @@
+Se decidió utilizar MongoDB en lugar de bases de datos relacionales para permitir una mayor flexibilidad en el modelo de datos.
+
+Se optó por sesiones en lugar de JWT para simplificar la gestión de autenticación en una aplicación web tradicional.
+
+El uso de Docker se adoptó para garantizar la portabilidad del sistema y facilitar su despliegue en distintos entornos.
+
+Se implementó CI/CD para asegurar la calidad del software mediante tests automáticos antes de cada despliegue.
+
+La arquitectura MERN fue seleccionada por permitir el uso de JavaScript en todas las capas del sistema.

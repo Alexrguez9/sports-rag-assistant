@@ -1,0 +1,11 @@
+Pregunta: ¿Cómo funciona el sistema de reservas?
+Respuesta: El sistema permite a los usuarios reservar instalaciones deportivas en franjas horarias específicas, validando la disponibilidad para evitar conflictos.
+
+Pregunta: ¿Qué arquitectura utiliza la aplicación?
+Respuesta: La aplicación utiliza una arquitectura basada en el stack MERN, con React en el frontend, Node.js y Express en el backend, y MongoDB como base de datos.
+
+Pregunta: ¿Cómo se gestionan las suscripciones?
+Respuesta: Las suscripciones regulan el acceso a ciertas instalaciones, permitiendo o denegando reservas en función de su estado.
+
+Pregunta: ¿Cómo se gestiona la seguridad?
+Respuesta: El sistema utiliza sesiones en el backend, variables de entorno para secretos y separación de entornos para proteger los datos.

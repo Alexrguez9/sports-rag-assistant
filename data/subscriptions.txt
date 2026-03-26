@@ -1,0 +1,7 @@
+El sistema incluye un modelo de suscripciones que regula el acceso a determinadas instalaciones deportivas.
+
+Los usuarios pueden tener suscripciones activas o inactivas, lo que afecta a su capacidad para realizar reservas.
+
+Por ejemplo, ciertas instalaciones como el gimnasio o atletismo pueden requerir una suscripción activa.
+
+El sistema evalúa el estado de la suscripción antes de permitir el acceso a funcionalidades restringidas.

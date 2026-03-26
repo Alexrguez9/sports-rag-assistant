@@ -1,0 +1,7 @@
+El sistema implementa autenticación y autorización de usuarios.
+
+Existen distintos roles, como estudiantes y administradores, con permisos diferenciados.
+
+La autenticación se gestiona mediante sesiones en el backend, evitando almacenar información sensible en el cliente.
+
+El sistema restringe el acceso a determinadas funcionalidades en función del rol del usuario.

@@ -1,0 +1,7 @@
+El sistema permite a los usuarios reservar instalaciones deportivas en franjas horarias específicas.
+
+Cada reserva está asociada a un usuario y una instalación, y el sistema valida la disponibilidad para evitar conflictos de horarios.
+
+Las reservas se almacenan en la base de datos junto con información como fecha, hora, usuario e instalación.
+
+El sistema permite visualizar las horas disponibles y las reservas existentes para facilitar la planificación por parte del usuario.
