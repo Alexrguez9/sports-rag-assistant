@@ -1,0 +1,9 @@
+La aplicación está preparada para su despliegue mediante contenedores Docker.
+
+Se utilizan imágenes separadas para frontend y backend, que pueden ejecutarse conjuntamente mediante docker-compose.
+
+El sistema integra CI/CD mediante GitHub Actions, ejecutando tests automáticamente antes de permitir despliegues.
+
+La base de datos se gestiona en MongoDB Atlas, con diferentes entornos para desarrollo, tests y producción.
+
+Las variables sensibles se gestionan mediante archivos .env, evitando su exposición en el repositorio.

@@ -1,0 +1,7 @@
+La aplicación DeportesURJC es una plataforma web diseñada para gestionar actividades deportivas en un entorno universitario.
+
+Permite a los usuarios registrarse, autenticarse y acceder a funcionalidades como la reserva de instalaciones, consulta de resultados deportivos y gestión de suscripciones.
+
+El sistema está orientado a resolver las limitaciones de soluciones externas utilizadas en universidades, proporcionando mayor flexibilidad, control y capacidad de evolución.
+
+La aplicación está diseñada para ser modular, escalable y fácilmente desplegable en distintos entornos.
