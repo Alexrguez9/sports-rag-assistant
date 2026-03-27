@@ -3,7 +3,7 @@ from retriever import Retriever
 from llm import ask_llm
 
 # 1. Cargar documentos
-docs = load_documents("../data")
+docs = load_documents("./data")
 
 # 2. Crear chunks
 chunks = []
