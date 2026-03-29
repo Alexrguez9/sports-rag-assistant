@@ -2,11 +2,10 @@ import numpy as np
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
+from config import TOP_K
+from config import OPENAI_API_KEY
 
-load_dotenv()
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def get_embedding(text):
     """Devuelve el embedding de un texto."""
@@ -18,14 +17,20 @@ def get_embedding(text):
 
 
 class Retriever:
-    """Búsqueda semántica básica sobre una lista de textos."""
-    def __init__(self, chunks):
-        # Guardar textos y calcular embeddings
+    """Realiza búsqueda semántica sobre un conjunto de textos."""
+
+    def __init__(self, chunks=None, embeddings=None):
+        """Inicializa el retriever con datos opcionales."""
+        self.chunks = chunks
+        self.embeddings = embeddings
+
+    def build(self, chunks):
+        """Genera embeddings para los textos proporcionados."""
         self.chunks = chunks
         self.embeddings = [get_embedding(c) for c in chunks]
 
-    def search(self, query, top_k=3):
-        """Devuelve los chunks más similares a la query."""
+    def search(self, query, top_k=TOP_K):
+        """Devuelve los chunks más similares a la consulta."""
         query_emb = get_embedding(query)
 
         similarities = [

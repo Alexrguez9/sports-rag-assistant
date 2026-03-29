@@ -1,10 +1,9 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+from config import OPENAI_API_KEY
 
-load_dotenv()
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def ask_llm(question, context_chunks):
     """
