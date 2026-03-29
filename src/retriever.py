@@ -3,11 +3,9 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from config import TOP_K
+from config import OPENAI_API_KEY
 
-load_dotenv()
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def get_embedding(text):
     """Devuelve el embedding de un texto."""
