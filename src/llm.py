@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from config import OPENAI_API_KEY
+from config import OPENAI_API_KEY, CHAT_MODEL
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -25,7 +25,7 @@ Pregunta:
 """
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=CHAT_MODEL,
         messages=[{"role": "user", "content": prompt}]
     )
 

@@ -3,14 +3,14 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from config import TOP_K
-from config import OPENAI_API_KEY
+from config import OPENAI_API_KEY, EMBEDDING_MODEL
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 def get_embedding(text):
     """Devuelve el embedding de un texto."""
     response = client.embeddings.create(
-        model="text-embedding-3-small",
+        model=EMBEDDING_MODEL,
         input=text
     )
     return response.data[0].embedding
